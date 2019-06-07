@@ -34,6 +34,12 @@ module.exports = {
         apiBase: `jsonapi`, 
       },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-responsive-iframe`],
+      },
+    },
     `gatsby-plugin-offline`,
   ],
 }

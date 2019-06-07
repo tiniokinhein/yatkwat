@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 
-const LargeAds = ({index}) => (
+const LargeAds = () => (
     <>
         <StaticQuery
 
@@ -14,12 +14,13 @@ const LargeAds = ({index}) => (
                         id
                         field_ads_ads {
                             value
+                            processed
                         }
                     }
                 }
             `} render={data => (
                <>
-                    <p key={data.nodeAds.id} dangerouslySetInnerHTML={{__html: data.nodeAds.field_ads_ads.value}}/>
+                    <iframe width="728" height="90" src={data.nodeAds.field_ads_ads.value} title={data.nodeAds.field_ads_ads.title}></iframe>
                </> 
             )}
 
