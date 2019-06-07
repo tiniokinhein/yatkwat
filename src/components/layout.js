@@ -17,7 +17,6 @@ import "./layout.css"
 
 import {CircleArrow as ScrollUpButton} from "react-scroll-up-button"
 import OwlCarousel from 'react-owl-carousel2'
-import LargeAds from "./ads/large";
 
 const newDate = new Date();
 
@@ -84,7 +83,7 @@ const Layout = ({ children, index }) => (
         <Header />
         <>
           <main key={index}>{children}</main>
-          <LargeAds />
+
           <footer className="footer-area">
                 <div className="bottom-footer-area">
                     <div className="container h-100">
