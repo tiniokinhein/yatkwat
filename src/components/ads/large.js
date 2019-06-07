@@ -20,7 +20,23 @@ const LargeAds = () => (
                 }
             `} render={data => (
                <>
-                    <iframe width="728" height="90" src={data.nodeAds.field_ads_ads.value} title={data.nodeAds.field_ads_ads.title}></iframe>
+                    <iframe 
+                        width="728" 
+                        height="90" 
+                        src={data.nodeAds.field_ads_ads.value} 
+                        title={data.nodeAds.field_ads_ads.title}
+                        id="5cfa6eec8012b"
+                        marginwidth="0" 
+                        marginheight="0" 
+                        vspace="0" 
+                        hspace="0" 
+                        allowtransparency="true" 
+                        allowfullscreen="true" 
+                        style={{border: 'medium none', padding: '0', margin: '0'}}
+                        frameborder="0"
+                        scrolling="no"
+                        sandbox="allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-pointer-lock allow-same-origin"
+                    ></iframe>
                </> 
             )}
 
