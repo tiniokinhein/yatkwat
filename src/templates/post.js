@@ -142,23 +142,24 @@ class PostTemplate extends Component {
                     />
                     </div>
                   }
-                <div className="row" style={{paddingTop: '25px'}}>
+                <div className="row ml-n1 mr-n1 mx-n1" style={{paddingTop: '25px'}}>
                     {
                       post.relationships.field_post_gallery_image && 
                         post.relationships.field_post_gallery_image.map(({localFile}) => (
-                          <div className="col-6 col-sm-6 show-img-ft">
-                            <ImageZoom
-                              image={{
-                                src: localFile.url,
-                                alt: '',
-                                className: 'show-img-al',
-                                
-                              }}
-                              zoomImage={{
-                                src: localFile.url,
-                                alt: ''
-                              }}
-                            />
+                          <div className="col-4 col-sm-3 show-img-ft p-1 d-flex">
+                            <div class="bg-white d-flex align-items-start">
+                              <ImageZoom
+                                image={{
+                                  src: localFile.url,
+                                  alt: '',
+                                  className: 'show-img-al',
+                                }}
+                                zoomImage={{
+                                  src: localFile.url,
+                                  alt: ''
+                                }}
+                              />
+                            </div>
                           </div>
                         ))
                     }

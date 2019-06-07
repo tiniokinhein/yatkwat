@@ -2076,12 +2076,9 @@ button.sb-facebook fa-icon {
     max-width: 100%;
 }
 
-.show-img-ft:nth-of-type(2n+1) {
-  padding: 0 5px 0 15px;
+.ml-n1 {
+  margin-left: -0.25rem !important;
 }
-.show-img-ft:nth-of-type(2n+2) {
-  padding: 0 15px 0 5px;
-}
-.show-img-al:first-child {
-  padding-bottom: 10px;
+.mr-n1 {
+  margin-right: -0.25rem !important;
 }
