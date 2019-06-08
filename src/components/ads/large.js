@@ -20,7 +20,7 @@ const LargeAds = () => (
                 }
             `} render={data => (
                <>
-                    <iframe 
+                    {/* <iframe 
                         width="728" 
                         height="90" 
                         src={data.nodeAds.field_ads_ads.value} 
@@ -35,8 +35,13 @@ const LargeAds = () => (
                         style={{border: 'medium none', padding: '0', margin: '0'}}
                         frameborder="0"
                         scrolling="no"
+                        data-cfasync="true" 
+                        type="text/javascript"
                         sandbox="allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-pointer-lock allow-same-origin"
-                    ></iframe>
+                    ></iframe> */}
+
+                    <script data-cfasync="false" type="text/javascript" src={data.nodeAds.field_ads_ads.value} />
+
                </> 
             )}
 
