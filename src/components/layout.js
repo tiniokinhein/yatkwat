@@ -83,6 +83,7 @@ const Layout = ({ children, index }) => (
         <Header />
         <>
           <main key={index}>{children}</main>
+        
           <footer className="footer-area">
                 <div className="bottom-footer-area">
                     <div className="container h-100">

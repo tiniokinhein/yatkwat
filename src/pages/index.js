@@ -8,13 +8,11 @@ import GridSlide from '../components/gridSlide'
 
 import Moment from 'react-moment'
 import Img from 'gatsby-image'
-// import LargeAds from "../components/ads/large";
-
-import ScriptTag from 'react-script-tag';
 
 const IndexPage = ({ data, index }) => (
   <>
   <Layout>
+
     <SEO title="သတင္းမီဒီယာေအဂ်င္စီ" keywords={[`သတင္းမီဒီယာေအဂ်င္စီ`, `news in myanmar`, `news app`]} />
     
       <Slide key={index} />
@@ -746,12 +744,6 @@ const IndexPage = ({ data, index }) => (
 
           </div>
         </div>
-      </div>
-      
-      {/* <LargeAds /> */}
-
-      <div class="text-center">
-        <ScriptTag data-cfasync="false" isHydrating={true} type="text/javascript" src="https://www.greatdexchange.com/a/display.php?r=2149187" />
       </div>
 
   </Layout>

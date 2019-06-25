@@ -304,6 +304,7 @@ div.center .custom-spin div {
     font-weight: 400;
     color: #333;
     font-size: 14px;
+    clear: both;
 }
 
 .post-list-p p:last-child {
@@ -317,6 +318,8 @@ div.center .custom-spin div {
 
 .post-list-p p img {
     width: 100%;
+    width: auto;
+    margin-bottom: 15px;
     float: left;
     padding: 2.5px 0;
 }
