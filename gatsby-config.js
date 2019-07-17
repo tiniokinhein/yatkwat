@@ -34,12 +34,12 @@ module.exports = {
         apiBase: `jsonapi`, 
       },
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [],
-      },
-    },
+//     {
+//       resolve: `gatsby-transformer-remark`,
+//       options: {
+//         plugins: [],
+//       },
+//     },
     `gatsby-plugin-offline`,
   ],
 }
